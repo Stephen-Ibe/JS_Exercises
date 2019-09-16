@@ -8,7 +8,7 @@
 // (getFirstValue([-52320, 0, 50]), -52320)
 
 // Create a function that takes an array and returns the first element.
-function getFirstValue(arr) {
+const getFirstValue = (arr) => {
 	for(let i = 0; i<1;i++){
 		return arr[i];
 	}

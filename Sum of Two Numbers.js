@@ -5,6 +5,4 @@
 // (addition(-3, -6), -9)
 // (addition(7, 3), 10)
 
-function addition(a, b) {
-	return a+b;
-}
+const addition = (a, b) => {return a+b}

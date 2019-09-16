@@ -1,4 +1,4 @@
-function tipCalculator(bill){
+const tipCalculator = (bill) => {
     let percentage;
     if(bill<50){
         percentage = 0.2;
