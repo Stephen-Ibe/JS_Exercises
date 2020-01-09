@@ -29,3 +29,23 @@ console.log(isItPalindrome('madam'));
 console.log(isItPalindrome('javascript'));
 
 
+// Third Solution
+const isPalindrome = ((str)=>{
+    str = str.toLowerCase();
+    for(let i=0;i<str.length;i++){
+        str.replace(' ','');
+        str.replace('.','');
+        str.replace(',','');
+        str.replace('-','');
+        str.replace('/','');
+        str.replace('(','');
+        str.replace(')','');
+        str.replace('_','');
+    }
+    let copy = str.split('').reverse().join('');
+    if(copy==str){
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+})('raCecar');
