@@ -1,0 +1,33 @@
+let word = 'aaabbaaa';
+let strg = 'aaaaaaaaaaaaaaaaaaaaaaa';
+let arr = [];
+const palindrome = (str) => {
+  if (str.length === 1) {
+        return "IMPOSSIBLE";
+  }
+  for (let i = 0; i < Math.floor(str.length / 2); ++ i) {
+      if (str[i] !== 'a') {
+          return str.substr(0, i) + 'a' + 
+              str.substr(i + 1);
+      }
+
+      for(let s of str){
+        if(s == 'a'){
+          arr.push(s);
+        } else{
+          break;
+        }
+      }
+  }
+
+  if(arr.length > 0){
+        return "IMPOSSIBLE"
+  } else{
+    return str.substr(0, str.length - 1) + 'b';
+  }
+  
+    
+}
+
+console.log(palindrome(word))
+console.log(palindrome(strg))
